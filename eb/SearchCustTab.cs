@@ -10,17 +10,19 @@ using System.Windows.Forms;
 
 namespace eb
 {
+
     public partial class Form3 : Form
     {
         // Define the private field for book information
-        private List<BookDetails> allbookinfo;
+        private List<BookDetails> allbookinfos;
 
         // Constructor that accepts a list of book details and assigns it to the field
-        public Form3(List<BookDetails> bookInfo)
+        public Form3(List<BookDetails> booklist)
         {
-            InitializeComponent(); // Initializes the form components
-            this.allbookinfo = bookInfo; // Assigns the passed-in list to the private field
+            InitializeComponent();
+            this.allbookinfos = booklist;
         }
+
 
 
         private void btnhome_Click(object sender, EventArgs e)
@@ -36,19 +38,18 @@ namespace eb
             string searchTitle = txtsearchtitle.Text;
             string searchSurname = txtsearchsurname.Text;
 
-            // Search using LINQ
-            // Filter results using LINQ
-            var results = allbookinfo.Where(book =>
-                (string.IsNullOrEmpty(searchNumber) || book.searchNumber == searchNumber) &&
-                (string.IsNullOrEmpty(searchTitle) || (book.searchTitle != null && book.searchTitle.Contains(searchTitle, StringComparison.OrdinalIgnoreCase))) &&
-                (string.IsNullOrEmpty(searchSurname) || (book.searchSurname != null && book.searchSurname.Contains(searchSurname, StringComparison.OrdinalIgnoreCase)))
-            ).ToList();
+            // LINQ query with null checks for .Contains
+            var results = allbookinfos.Where(book =>
+    (string.IsNullOrEmpty(searchNumber) || book.PhoneNumber == searchNumber) &&
+    (string.IsNullOrEmpty(searchTitle) || (book.Title != null && book.Title.ToLower().Contains(searchTitle.ToLower()))) &&
+    (string.IsNullOrEmpty(searchSurname) || (book.Surname != null && book.Surname.ToLower().Contains(searchSurname.ToLower())))
+).ToList();
+
 
             // Display results or show a message if no results are found
             if (results.Any())
             {
                 MessageBox.Show($"{results.Count} result(s) found!", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Optional: Display results in a control like DataGridView
             }
             else
             {

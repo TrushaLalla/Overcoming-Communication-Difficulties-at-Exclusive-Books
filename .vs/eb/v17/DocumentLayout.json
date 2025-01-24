@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\eb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|solutionrelative:eb\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|c:\\users\\lab_services_student\\source\\repos\\eb\\eb\\searchcusttab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|solutionrelative:eb\\searchcusttab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|solutionrelative:eb\\bookdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|solutionrelative:eb\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|c:\\users\\lab_services_student\\source\\repos\\eb\\eb\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|solutionrelative:eb\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|c:\\users\\lab_services_student\\source\\repos\\eb\\eb\\searchcusttab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|solutionrelative:eb\\searchcusttab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5551A93-3F8F-43DC-B3E6-A227FFAFA3D8}|eb\\eb.csproj|C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,55 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\Form2.cs",
+              "RelativeDocumentMoniker": "eb\\Form2.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\Form2.cs [Design]",
+              "RelativeToolTip": "eb\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T20:15:56.369Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SearchCustTab.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\SearchCustTab.cs",
+              "RelativeDocumentMoniker": "eb\\SearchCustTab.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\SearchCustTab.cs [Design]",
+              "RelativeToolTip": "eb\\SearchCustTab.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T20:15:40.764Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BookDetails.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\BookDetails.cs",
               "RelativeDocumentMoniker": "eb\\BookDetails.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\BookDetails.cs",
               "RelativeToolTip": "eb\\BookDetails.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T09:54:48.138Z"
+              "WhenOpened": "2025-01-21T09:54:48.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SearchCustTab.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\SearchCustTab.cs",
               "RelativeDocumentMoniker": "eb\\SearchCustTab.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\SearchCustTab.cs",
               "RelativeToolTip": "eb\\SearchCustTab.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABYAAAAJAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAUwC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T18:20:23.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\Form2.cs",
               "RelativeDocumentMoniker": "eb\\Form2.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\Form2.cs",
               "RelativeToolTip": "eb\\Form2.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAADcAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T16:54:59.366Z"
+              "WhenOpened": "2025-01-13T16:54:59.366Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\Form1.cs",
               "RelativeDocumentMoniker": "eb\\Form1.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\eb\\eb\\Form1.cs [Design]",
               "RelativeToolTip": "eb\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T10:13:13.498Z"
+              "WhenOpened": "2024-12-17T10:13:13.498Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

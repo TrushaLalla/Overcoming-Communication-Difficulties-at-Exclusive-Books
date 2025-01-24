@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace eb
 {
+
     public partial class Form2 : Form
 
     {
-        public List<BookDetails> allbookinfo = new List<BookDetails>();
-
         public object Checked { get; private set; }
-
+        public List<BookDetails> allbookinfos = new List<BookDetails>();
         public Form2()
         {
             InitializeComponent();
-        }
 
+        }
+        //public List<BookDetails> allbookinfo = new List<BookDetails>();
         private void Form2_Load(object sender, EventArgs e)
         {
 
@@ -53,7 +53,7 @@ namespace eb
 
             BookDetails newBook = new BookDetails(title, name, surname, edition, description, phoneNumber,
                                            isInStock, orderIfNotAvailable, checkOnline, isMember, preferredFormat);
-            allbookinfo.Add(newBook);
+            allbookinfos.Add(newBook);
 
             txttitle.Text = string.Empty;
             txtauthname.Text = string.Empty;
@@ -77,8 +77,8 @@ namespace eb
             MessageBox.Show("Saved!", "Book Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Navigate to SearchCustTab
-            Form3 form3 = new Form3(allbookinfo);
-            this.Hide();
+            List<BookDetails> booklist = new List<BookDetails>();
+            Form3 form3 = new Form3(booklist);
             form3.Show();
         }
     }
