@@ -3,11 +3,10 @@ C:\Users\lab_services_student\source\repos\eb\eb\bin\Debug\eb.exe
 C:\Users\lab_services_student\source\repos\eb\eb\bin\Debug\eb.pdb
 C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.csproj.AssemblyReference.cache
 C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.Form1.resources
+C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.Form2.resources
 C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.Properties.Resources.resources
+C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.Form3.resources
 C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.csproj.GenerateResource.cache
 C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.csproj.CoreCompileInputs.cache
 C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.exe
 C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.pdb
-C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.Form2.resources
-C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.SearchCustTab.resources
-C:\Users\lab_services_student\source\repos\eb\eb\obj\Debug\eb.Form3.resources

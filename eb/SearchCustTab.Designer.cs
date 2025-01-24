@@ -30,7 +30,7 @@ namespace eb
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchCustTab1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -224,9 +224,9 @@ namespace eb
         private System.Windows.Forms.Label label5;
         private List<BookDetails> allbookinfo;
 
-        public Form3(List<BookDetails> allbookinfo)
-        {
-            this.allbookinfo = allbookinfo;
-        }
+        //public Form3(List<BookDetails> allbookinfo)
+        //{
+        //    this.allbookinfo = allbookinfo;
+        //}
     }
 }
