@@ -222,7 +222,7 @@ namespace eb
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearchsurname;
         private System.Windows.Forms.Label label5;
-        private List<BookDetails> allbookinfo;
+        //private List<BookDetails> allbookinfos;
 
         //public Form3(List<BookDetails> allbookinfo)
         //{

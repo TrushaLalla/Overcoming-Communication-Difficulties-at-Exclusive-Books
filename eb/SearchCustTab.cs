@@ -34,27 +34,36 @@ namespace eb
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
-            string searchNumber = txtsearchnumber.Text;
+            string searchfanaticsNumber = txtsearchnumber.Text;
             string searchTitle = txtsearchtitle.Text;
             string searchSurname = txtsearchsurname.Text;
 
             // LINQ query with null checks for .Contains
             var results = allbookinfos.Where(book =>
-    (string.IsNullOrEmpty(searchNumber) || book.PhoneNumber == searchNumber) &&
+    (string.IsNullOrEmpty(searchfanaticsNumber) || book.FanaticsNumber == searchfanaticsNumber) &&
     (string.IsNullOrEmpty(searchTitle) || (book.Title != null && book.Title.ToLower().Contains(searchTitle.ToLower()))) &&
     (string.IsNullOrEmpty(searchSurname) || (book.Surname != null && book.Surname.ToLower().Contains(searchSurname.ToLower())))
 ).ToList();
 
 
+
+
+            BookDetails foundBookatno = allbookinfos.FirstOrDefault(book => book.FanaticsNumber == txtsearchnumber.Text);
+
             // Display results or show a message if no results are found
             if (results.Any())
             {
-                MessageBox.Show($"{results.Count} result(s) found!", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtsearchtitle.Text = foundBookatno.Title;
+                txtsearchsurname.Text = foundBookatno.Surname;
+                //here instead of msg pop up, navigate to form 2, if cant , then only
             }
             else
             {
-                MessageBox.Show("No results found.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Book not found.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            //--------------------------------------------------------------------------------------------------------------
+
+
         }
 
         private void btnnewbook_Click(object sender, EventArgs e)

@@ -11,9 +11,10 @@
     public bool CheckOnline { get; set; } // Checkbox: "May we check if there is a copy online?"
     public bool IsMember { get; set; } // Checkbox: "Are you an Exclusive Books member?"
     public string PreferredFormat { get; set; } // Hardcover, Paperback, eBook
+    public string FanaticsNumber { get; set; }
 
     public BookDetails(string title, string name, string surname, string edition, string description, string phoneNumber,
-                       bool isInStock, bool orderIfNotAvailable, bool checkOnline, bool isMember, string preferredFormat)
+                       bool isInStock, bool orderIfNotAvailable, bool checkOnline, bool isMember, string preferredFormat,string fanaticsNumber)
     {
         Title = title;
         Name = name;
@@ -26,5 +27,6 @@
         CheckOnline = checkOnline;
         IsMember = isMember;
         PreferredFormat = preferredFormat;
+        FanaticsNumber = fanaticsNumber;
     }
 }

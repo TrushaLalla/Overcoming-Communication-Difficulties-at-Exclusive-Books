@@ -64,6 +64,8 @@
             this.chkno2 = new System.Windows.Forms.CheckBox();
             this.chkyes3 = new System.Windows.Forms.CheckBox();
             this.chkno3 = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtenterno = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,7 +147,7 @@
             this.txted.Multiline = true;
             this.txted.Name = "txted";
             this.txted.Size = new System.Drawing.Size(213, 47);
-            this.txted.TabIndex = 7;
+            this.txted.TabIndex = 3;
             // 
             // txtdes
             // 
@@ -154,7 +156,7 @@
             this.txtdes.Multiline = true;
             this.txtdes.Name = "txtdes";
             this.txtdes.Size = new System.Drawing.Size(213, 134);
-            this.txtdes.TabIndex = 8;
+            this.txtdes.TabIndex = 4;
             // 
             // txtauthsur
             // 
@@ -163,7 +165,7 @@
             this.txtauthsur.Multiline = true;
             this.txtauthsur.Name = "txtauthsur";
             this.txtauthsur.Size = new System.Drawing.Size(213, 52);
-            this.txtauthsur.TabIndex = 9;
+            this.txtauthsur.TabIndex = 2;
             // 
             // txtauthname
             // 
@@ -172,7 +174,7 @@
             this.txtauthname.Multiline = true;
             this.txtauthname.Name = "txtauthname";
             this.txtauthname.Size = new System.Drawing.Size(213, 54);
-            this.txtauthname.TabIndex = 10;
+            this.txtauthname.TabIndex = 1;
             // 
             // txttitle
             // 
@@ -181,18 +183,19 @@
             this.txttitle.Multiline = true;
             this.txttitle.Name = "txttitle";
             this.txttitle.Size = new System.Drawing.Size(213, 56);
-            this.txttitle.TabIndex = 11;
+            this.txttitle.TabIndex = 0;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label7.Location = new System.Drawing.Point(150, 622);
+            this.label7.Location = new System.Drawing.Point(152, 669);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(761, 27);
             this.label7.TabIndex = 12;
             this.label7.Text = "Once done, please call a staff member to assist you further. Thank You.";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -213,7 +216,7 @@
             this.txtphonenumber.Multiline = true;
             this.txtphonenumber.Name = "txtphonenumber";
             this.txtphonenumber.Size = new System.Drawing.Size(273, 28);
-            this.txtphonenumber.TabIndex = 14;
+            this.txtphonenumber.TabIndex = 12;
             this.txtphonenumber.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label9
@@ -244,7 +247,7 @@
             this.checkBox1.Location = new System.Drawing.Point(569, 42);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(399, 22);
-            this.checkBox1.TabIndex = 17;
+            this.checkBox1.TabIndex = 9;
             this.checkBox1.Text = "Yes, I\'d like to check if this book is available in-store.";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -265,7 +268,7 @@
             this.chkhardcover.Location = new System.Drawing.Point(568, 513);
             this.chkhardcover.Name = "chkhardcover";
             this.chkhardcover.Size = new System.Drawing.Size(91, 19);
-            this.chkhardcover.TabIndex = 19;
+            this.chkhardcover.TabIndex = 16;
             this.chkhardcover.Text = "Hardcover";
             this.chkhardcover.UseVisualStyleBackColor = true;
             // 
@@ -276,7 +279,7 @@
             this.chkpaperback.Location = new System.Drawing.Point(723, 513);
             this.chkpaperback.Name = "chkpaperback";
             this.chkpaperback.Size = new System.Drawing.Size(94, 19);
-            this.chkpaperback.TabIndex = 20;
+            this.chkpaperback.TabIndex = 17;
             this.chkpaperback.Text = "Paperback";
             this.chkpaperback.UseVisualStyleBackColor = true;
             // 
@@ -287,7 +290,7 @@
             this.chkebook.Location = new System.Drawing.Point(892, 513);
             this.chkebook.Name = "chkebook";
             this.chkebook.Size = new System.Drawing.Size(66, 19);
-            this.chkebook.TabIndex = 21;
+            this.chkebook.TabIndex = 19;
             this.chkebook.Text = "eBook";
             this.chkebook.UseVisualStyleBackColor = true;
             // 
@@ -329,7 +332,7 @@
             this.chkyes1.Location = new System.Drawing.Point(215, 526);
             this.chkyes1.Name = "chkyes1";
             this.chkyes1.Size = new System.Drawing.Size(49, 19);
-            this.chkyes1.TabIndex = 25;
+            this.chkyes1.TabIndex = 5;
             this.chkyes1.Text = "Yes";
             this.chkyes1.UseVisualStyleBackColor = true;
             // 
@@ -340,7 +343,7 @@
             this.chkno1.Location = new System.Drawing.Point(279, 526);
             this.chkno1.Name = "chkno1";
             this.chkno1.Size = new System.Drawing.Size(44, 19);
-            this.chkno1.TabIndex = 26;
+            this.chkno1.TabIndex = 6;
             this.chkno1.Text = "No";
             this.chkno1.UseVisualStyleBackColor = true;
             // 
@@ -351,7 +354,7 @@
             this.chksignup.Location = new System.Drawing.Point(338, 526);
             this.chksignup.Name = "chksignup";
             this.chksignup.Size = new System.Drawing.Size(166, 19);
-            this.chksignup.TabIndex = 27;
+            this.chksignup.TabIndex = 7;
             this.chksignup.Text = "No, I\'d like to sign up.";
             this.chksignup.UseVisualStyleBackColor = true;
             // 
@@ -359,7 +362,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(11, 560);
+            this.label15.Location = new System.Drawing.Point(11, 631);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(797, 38);
             this.label15.TabIndex = 28;
@@ -382,7 +385,7 @@
             // 
             this.btnsave.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnsave.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(982, 612);
+            this.btnsave.Location = new System.Drawing.Point(982, 648);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(109, 48);
             this.btnsave.TabIndex = 30;
@@ -397,7 +400,7 @@
             this.chkyes2.Location = new System.Drawing.Point(567, 206);
             this.chkyes2.Name = "chkyes2";
             this.chkyes2.Size = new System.Drawing.Size(207, 22);
-            this.chkyes2.TabIndex = 31;
+            this.chkyes2.TabIndex = 10;
             this.chkyes2.Text = "Yes:   My contact number:";
             this.chkyes2.UseVisualStyleBackColor = true;
             // 
@@ -408,7 +411,7 @@
             this.chkno2.Location = new System.Drawing.Point(567, 234);
             this.chkno2.Name = "chkno2";
             this.chkno2.Size = new System.Drawing.Size(123, 22);
-            this.chkno2.TabIndex = 32;
+            this.chkno2.TabIndex = 13;
             this.chkno2.Text = "No thank you.";
             this.chkno2.UseVisualStyleBackColor = true;
             // 
@@ -419,7 +422,7 @@
             this.chkyes3.Location = new System.Drawing.Point(723, 309);
             this.chkyes3.Name = "chkyes3";
             this.chkyes3.Size = new System.Drawing.Size(49, 19);
-            this.chkyes3.TabIndex = 33;
+            this.chkyes3.TabIndex = 14;
             this.chkyes3.Text = "Yes";
             this.chkyes3.UseVisualStyleBackColor = true;
             // 
@@ -430,15 +433,34 @@
             this.chkno3.Location = new System.Drawing.Point(778, 309);
             this.chkno3.Name = "chkno3";
             this.chkno3.Size = new System.Drawing.Size(44, 19);
-            this.chkno3.TabIndex = 34;
+            this.chkno3.TabIndex = 15;
             this.chkno3.Text = "No";
             this.chkno3.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(12, 578);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(105, 18);
+            this.label17.TabIndex = 31;
+            this.label17.Text = "Enter number:";
+            // 
+            // txtenterno
+            // 
+            this.txtenterno.Location = new System.Drawing.Point(215, 579);
+            this.txtenterno.Name = "txtenterno";
+            this.txtenterno.Size = new System.Drawing.Size(213, 20);
+            this.txtenterno.TabIndex = 8;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1207, 657);
+            this.ClientSize = new System.Drawing.Size(1207, 749);
+            this.Controls.Add(this.txtenterno);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.chkno3);
             this.Controls.Add(this.chkyes3);
             this.Controls.Add(this.chkno2);
@@ -520,5 +542,7 @@
         private System.Windows.Forms.CheckBox chkno2;
         private System.Windows.Forms.CheckBox chkyes3;
         private System.Windows.Forms.CheckBox chkno3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtenterno;
     }
 }
