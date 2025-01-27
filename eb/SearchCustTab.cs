@@ -48,14 +48,16 @@ namespace eb
 
 
 
-            BookDetails foundBookatno = allbookinfos.FirstOrDefault(book => book.FanaticsNumber == txtsearchnumber.Text);
+            BookDetails foundBook = allbookinfos.FirstOrDefault(book =>
+            book.FanaticsNumber == searchfanaticsNumber ||
+            book.Title.Equals(searchTitle, StringComparison.OrdinalIgnoreCase) ||
+            book.Surname.Equals(searchSurname, StringComparison.OrdinalIgnoreCase));
 
-            // Display results or show a message if no results are found
-            if (results.Any())
+            if (foundBook != null)
             {
-                txtsearchtitle.Text = foundBookatno.Title;
-                txtsearchsurname.Text = foundBookatno.Surname;
-                //here instead of msg pop up, navigate to form 2, if cant , then only
+                Form2 form2 = new Form2(foundBook); // constructor to accept a BookDetails object
+                form2.Show();
+                this.Hide(); 
             }
             else
             {

@@ -20,6 +20,38 @@ namespace eb
         public Form2()
         {
             InitializeComponent();
+        }
+        public Form2(BookDetails bookDetails)
+        {
+            InitializeComponent();
+            if (bookDetails != null)
+            {
+                txttitle.Text = bookDetails.Title;
+                txtauthname.Text = bookDetails.Name;
+                txtauthsur.Text = bookDetails.Surname;
+                txted.Text = bookDetails.Edition;
+                txtdes.Text = bookDetails.Description;
+                txtenterno.Text = bookDetails.FanaticsNumber;
+                txtphonenumber.Text = bookDetails.PhoneNumber;
+
+                // Set checkboxes
+                chkyes1.Checked = bookDetails.IsInStock;
+                chkno1.Checked = !bookDetails.IsInStock; // Opposite of IsInStock
+
+                chkyes2.Checked = bookDetails.OrderIfNotAvailable;
+                chkno2.Checked = !bookDetails.OrderIfNotAvailable;
+
+                chkyes3.Checked = bookDetails.CheckOnline;
+                chkno3.Checked = !bookDetails.CheckOnline;
+
+                chksignup.Checked = bookDetails.IsMember;
+                chkstock.Checked = bookDetails.IsInStock;
+
+                // Handle preferred format checkboxes
+                chkhardcover.Checked = bookDetails.PreferredFormat == "Hardcover";
+                chkpaperback.Checked = bookDetails.PreferredFormat == "Paperback";
+                chkebook.Checked = bookDetails.PreferredFormat == "eBook";
+            }
 
         }
         //public List<BookDetails> allbookinfo = new List<BookDetails>();
@@ -52,7 +84,7 @@ namespace eb
             string edition = txted.Text;
             string description = txtdes.Text;
             string phoneNumber = txtphonenumber.Text;
-            bool isInStock = chkyes1.Checked;
+            bool isInStock = chkstock.Checked;
             bool orderIfNotAvailable = chkyes2.Checked;
             bool checkOnline = chkyes3.Checked;
             bool isMember = chksignup.Checked || chkyes3.Checked;
@@ -72,7 +104,7 @@ namespace eb
             txtenterno.Text = string.Empty; 
 
             // Uncheck all checkboxes
-            chkyes1.Checked = false;
+            chkstock.Checked = false;
             chkno1.Checked = false;
             chkyes2.Checked = false;
             chkno2.Checked = false;
@@ -82,6 +114,7 @@ namespace eb
             chkhardcover.Checked = false;
             chkpaperback.Checked = false;
             chkebook.Checked = false;
+            chkstock.Checked = false;
 
             MessageBox.Show("Saved!", "Book Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -97,6 +130,25 @@ namespace eb
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            this.Hide();
+            form1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(allbookinfos);
+            this.Hide();
+            form3.Show();
+        }
+
+        private void chkstock_CheckedChanged(object sender, EventArgs e)
         {
 
         }

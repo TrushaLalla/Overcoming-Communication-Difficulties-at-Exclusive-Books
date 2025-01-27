@@ -46,7 +46,7 @@
             this.txtphonenumber = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkstock = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.chkhardcover = new System.Windows.Forms.CheckBox();
             this.chkpaperback = new System.Windows.Forms.CheckBox();
@@ -66,6 +66,8 @@
             this.chkno3 = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtenterno = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,11 +192,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label7.Location = new System.Drawing.Point(152, 669);
+            this.label7.Location = new System.Drawing.Point(122, 713);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(761, 27);
+            this.label7.Size = new System.Drawing.Size(772, 27);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Once done, please call a staff member to assist you further. Thank You.";
+            this.label7.Text = "Once saved, please call a staff member to assist you further. Thank You.";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
@@ -240,16 +242,17 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Do we have this book in stock?";
             // 
-            // checkBox1
+            // chkstock
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(569, 42);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(399, 22);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Yes, I\'d like to check if this book is available in-store.";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkstock.AutoSize = true;
+            this.chkstock.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkstock.Location = new System.Drawing.Point(569, 42);
+            this.chkstock.Name = "chkstock";
+            this.chkstock.Size = new System.Drawing.Size(399, 22);
+            this.chkstock.TabIndex = 9;
+            this.chkstock.Text = "Yes, I\'d like to check if this book is available in-store.";
+            this.chkstock.UseVisualStyleBackColor = true;
+            this.chkstock.CheckedChanged += new System.EventHandler(this.chkstock_CheckedChanged);
             // 
             // label11
             // 
@@ -385,7 +388,7 @@
             // 
             this.btnsave.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnsave.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(982, 648);
+            this.btnsave.Location = new System.Drawing.Point(916, 692);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(109, 48);
             this.btnsave.TabIndex = 30;
@@ -449,16 +452,43 @@
             // 
             // txtenterno
             // 
+            this.txtenterno.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtenterno.Location = new System.Drawing.Point(215, 579);
             this.txtenterno.Name = "txtenterno";
-            this.txtenterno.Size = new System.Drawing.Size(213, 20);
+            this.txtenterno.Size = new System.Drawing.Size(213, 22);
             this.txtenterno.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1120, 631);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 38);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1120, 677);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 36);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Search";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1207, 749);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtenterno);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.chkno3);
@@ -478,7 +508,7 @@
             this.Controls.Add(this.chkpaperback);
             this.Controls.Add(this.chkhardcover);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkstock);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtphonenumber);
@@ -524,7 +554,7 @@
         private System.Windows.Forms.TextBox txtphonenumber;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkstock;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox chkhardcover;
         private System.Windows.Forms.CheckBox chkpaperback;
@@ -544,5 +574,7 @@
         private System.Windows.Forms.CheckBox chkno3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtenterno;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
