@@ -68,6 +68,7 @@
             this.txtenterno = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.listBoxBooks = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -214,7 +215,7 @@
             // txtphonenumber
             // 
             this.txtphonenumber.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtphonenumber.Location = new System.Drawing.Point(818, 200);
+            this.txtphonenumber.Location = new System.Drawing.Point(922, 199);
             this.txtphonenumber.Multiline = true;
             this.txtphonenumber.Name = "txtphonenumber";
             this.txtphonenumber.Size = new System.Drawing.Size(273, 28);
@@ -225,7 +226,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(566, 109);
+            this.label9.Location = new System.Drawing.Point(606, 107);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(540, 18);
             this.label9.TabIndex = 15;
@@ -236,7 +237,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(566, 21);
+            this.label10.Location = new System.Drawing.Point(606, 21);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(223, 18);
             this.label10.TabIndex = 16;
@@ -246,7 +247,7 @@
             // 
             this.chkstock.AutoSize = true;
             this.chkstock.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkstock.Location = new System.Drawing.Point(569, 42);
+            this.chkstock.Location = new System.Drawing.Point(609, 42);
             this.chkstock.Name = "chkstock";
             this.chkstock.Size = new System.Drawing.Size(399, 22);
             this.chkstock.TabIndex = 9;
@@ -258,7 +259,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(566, 492);
+            this.label11.Location = new System.Drawing.Point(606, 492);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(317, 18);
             this.label11.TabIndex = 18;
@@ -268,7 +269,7 @@
             // 
             this.chkhardcover.AutoSize = true;
             this.chkhardcover.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkhardcover.Location = new System.Drawing.Point(568, 513);
+            this.chkhardcover.Location = new System.Drawing.Point(609, 509);
             this.chkhardcover.Name = "chkhardcover";
             this.chkhardcover.Size = new System.Drawing.Size(91, 19);
             this.chkhardcover.TabIndex = 16;
@@ -279,7 +280,7 @@
             // 
             this.chkpaperback.AutoSize = true;
             this.chkpaperback.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkpaperback.Location = new System.Drawing.Point(723, 513);
+            this.chkpaperback.Location = new System.Drawing.Point(778, 513);
             this.chkpaperback.Name = "chkpaperback";
             this.chkpaperback.Size = new System.Drawing.Size(94, 19);
             this.chkpaperback.TabIndex = 17;
@@ -290,7 +291,7 @@
             // 
             this.chkebook.AutoSize = true;
             this.chkebook.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkebook.Location = new System.Drawing.Point(892, 513);
+            this.chkebook.Location = new System.Drawing.Point(981, 509);
             this.chkebook.Name = "chkebook";
             this.chkebook.Size = new System.Drawing.Size(66, 19);
             this.chkebook.TabIndex = 19;
@@ -301,7 +302,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(564, 289);
+            this.label12.Location = new System.Drawing.Point(606, 292);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(601, 36);
             this.label12.TabIndex = 22;
@@ -312,7 +313,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(566, 336);
+            this.label13.Location = new System.Drawing.Point(606, 331);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(407, 144);
             this.label13.TabIndex = 23;
@@ -343,7 +344,7 @@
             // 
             this.chkno1.AutoSize = true;
             this.chkno1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkno1.Location = new System.Drawing.Point(279, 526);
+            this.chkno1.Location = new System.Drawing.Point(304, 526);
             this.chkno1.Name = "chkno1";
             this.chkno1.Size = new System.Drawing.Size(44, 19);
             this.chkno1.TabIndex = 6;
@@ -354,7 +355,7 @@
             // 
             this.chksignup.AutoSize = true;
             this.chksignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chksignup.Location = new System.Drawing.Point(338, 526);
+            this.chksignup.Location = new System.Drawing.Point(380, 526);
             this.chksignup.Name = "chksignup";
             this.chksignup.Size = new System.Drawing.Size(166, 19);
             this.chksignup.TabIndex = 7;
@@ -367,17 +368,17 @@
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(11, 631);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(797, 38);
+            this.label15.Size = new System.Drawing.Size(797, 57);
             this.label15.TabIndex = 28;
             this.label15.Text = "Please note , your membership number will be your unique customer key after signi" +
-    "ng up at the counter.\r\nIf not a member, please keep in mind the provided title /" +
-    " author\'s  name above.\r\n";
+    "ng up at the counter.\r\n\r\nIf not a member, please keep in mind the provided title" +
+    " / author\'s surname above.\r\n";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(563, 128);
+            this.label16.Location = new System.Drawing.Point(605, 139);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(552, 57);
             this.label16.TabIndex = 29;
@@ -400,7 +401,7 @@
             // 
             this.chkyes2.AutoSize = true;
             this.chkyes2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkyes2.Location = new System.Drawing.Point(567, 206);
+            this.chkyes2.Location = new System.Drawing.Point(609, 206);
             this.chkyes2.Name = "chkyes2";
             this.chkyes2.Size = new System.Drawing.Size(207, 22);
             this.chkyes2.TabIndex = 10;
@@ -411,7 +412,7 @@
             // 
             this.chkno2.AutoSize = true;
             this.chkno2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkno2.Location = new System.Drawing.Point(567, 234);
+            this.chkno2.Location = new System.Drawing.Point(609, 234);
             this.chkno2.Name = "chkno2";
             this.chkno2.Size = new System.Drawing.Size(123, 22);
             this.chkno2.TabIndex = 13;
@@ -482,11 +483,20 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // listBoxBooks
+            // 
+            this.listBoxBooks.FormattingEnabled = true;
+            this.listBoxBooks.Location = new System.Drawing.Point(390, 139);
+            this.listBoxBooks.Name = "listBoxBooks";
+            this.listBoxBooks.Size = new System.Drawing.Size(233, 186);
+            this.listBoxBooks.TabIndex = 34;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1207, 749);
+            this.Controls.Add(this.listBoxBooks);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtenterno);
@@ -576,5 +586,6 @@
         private System.Windows.Forms.TextBox txtenterno;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox listBoxBooks;
     }
 }

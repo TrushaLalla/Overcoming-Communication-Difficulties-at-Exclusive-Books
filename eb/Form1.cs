@@ -11,10 +11,14 @@ using System.Windows.Forms;
 namespace eb
 {
     public partial class Form1 : Form
+
     {
+        private List<BookDetails> allbookinfos = new List<BookDetails>();
+
         public Form1()
         {
             InitializeComponent();
+            allbookinfos = JsonHelper.LoadBooksFromJson();
         }
 
         private void button1_Click(object sender, EventArgs e)

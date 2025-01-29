@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
+using System.IO;
+using eb;
 
 namespace eb
 {
@@ -14,12 +17,55 @@ namespace eb
     public partial class Form2 : Form
 
     {
-        public object Checked { get; private set; }
-        private List<BookDetails> allbookinfos = new List<BookDetails>();
-        private List<BookDetails> allbookinfo = new List<BookDetails>();
-        public Form2()
+        public Form2(List<BookDetails> allbookinfos)
         {
             InitializeComponent();
+            this.allbookinfos = allbookinfos ?? new List<BookDetails>(); // Ensure it's not null
+            PopulateBookList();
+        }
+        public object Checked { get; private set; }
+        private List<BookDetails> allbookinfos = new List<BookDetails>();
+        //  private List<BookDetails> allbookinfo = new List<BookDetails>();
+        
+
+        public void PopulateBookList()
+        {
+            listBoxBooks.Items.Clear(); // Assuming you have a ListBox named listBoxBooks
+
+            foreach (var book in allbookinfos)
+            {
+                listBoxBooks.Items.Add($"{book.Title} - {book.Surname}");
+            }
+        }
+
+        // When a book is selected, populate the textboxes
+        public void listBoxBooks_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxBooks.SelectedIndex >= 0)
+            {
+                BookDetails selectedBook = allbookinfos[listBoxBooks.SelectedIndex];
+                PopulateForm(selectedBook);
+            }
+        }
+
+        // Populate the form fields
+        public void PopulateForm(BookDetails book)
+        {
+            txttitle.Text = book.Title;
+            txtauthname.Text = book.Name;
+            txtauthsur.Text = book.Surname;
+            txted.Text = book.Edition;
+            txtdes.Text = book.Description;
+            txtphonenumber.Text = book.FanaticsNumber;
+
+            chkyes1.Checked = book.IsInStock;
+            chkyes2.Checked = book.OrderIfNotAvailable;
+            chkyes3.Checked = book.CheckOnline;
+            chksignup.Checked = book.IsMember;
+
+            chkhardcover.Checked = book.PreferredFormat == "Hardcover";
+            chkpaperback.Checked = book.PreferredFormat == "Paperback";
+            chkebook.Checked = book.PreferredFormat == "eBook";
         }
         public Form2(BookDetails bookDetails)
         {
@@ -54,11 +100,15 @@ namespace eb
             }
 
         }
+
+        
+
         //public List<BookDetails> allbookinfo = new List<BookDetails>();
         private void Form2_Load(object sender, EventArgs e)
         {
             txttitle.Focus();
             this.ActiveControl = txttitle;
+            allbookinfos = JsonHelper.LoadBooksFromJson();
             allbookinfos = new List<BookDetails>();
         }
 
@@ -89,11 +139,13 @@ namespace eb
             bool checkOnline = chkyes3.Checked;
             bool isMember = chksignup.Checked || chkyes3.Checked;
             string preferredFormat = chkhardcover.Checked ? "Hardcover" : chkpaperback.Checked ? "Paperback" : chkebook.Checked ? "eBook" : "None";
-            string number =txtenterno.Text;
-            string fanaticsNumber=txtenterno.Text;  
+            string number = txtenterno.Text;
+            string fanaticsNumber = txtenterno.Text;
             BookDetails newBook = new BookDetails(title, name, surname, edition, description, phoneNumber,
-                                           isInStock, orderIfNotAvailable, checkOnline, isMember, preferredFormat,fanaticsNumber);
+                                           isInStock, orderIfNotAvailable, checkOnline, isMember, preferredFormat, fanaticsNumber);
             allbookinfos.Add(newBook);
+
+            JsonHelper.SaveBooksToJson(allbookinfos);
 
             txttitle.Text = string.Empty;
             txtauthname.Text = string.Empty;
@@ -101,10 +153,11 @@ namespace eb
             txted.Text = string.Empty;
             txtdes.Text = string.Empty;
             txtphonenumber.Text = string.Empty;
-            txtenterno.Text = string.Empty; 
+            txtenterno.Text = string.Empty;
 
             // Uncheck all checkboxes
             chkstock.Checked = false;
+            chkyes1.Checked = false;
             chkno1.Checked = false;
             chkyes2.Checked = false;
             chkno2.Checked = false;
@@ -117,7 +170,7 @@ namespace eb
             chkstock.Checked = false;
 
             MessageBox.Show("Saved!", "Book Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            PopulateBookList();
             // Navigate to SearchCustTab
             //List<BookDetails> allbookinfos = new List<BookDetails>();
             Form3 form3 = new Form3(allbookinfos);

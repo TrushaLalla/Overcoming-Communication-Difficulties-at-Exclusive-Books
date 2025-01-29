@@ -34,6 +34,7 @@ namespace eb
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
+           // string searchTerm = txtSearch.Text.Trim();
             string searchfanaticsNumber = txtsearchnumber.Text;
             string searchTitle = txtsearchtitle.Text;
             string searchSurname = txtsearchsurname.Text;
@@ -56,6 +57,7 @@ namespace eb
             if (foundBook != null)
             {
                 Form2 form2 = new Form2(foundBook); // constructor to accept a BookDetails object
+                PopulateForm( foundBook);
                 form2.Show();
                 this.Hide(); 
             }
@@ -70,7 +72,7 @@ namespace eb
 
         private void btnnewbook_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(allbookinfos);
             this.Hide();
             form2.Show();
         }
