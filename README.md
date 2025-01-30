@@ -8,11 +8,11 @@ This project was coded using an application called Microsoft Visual Studio 2022 
 
 <h2>How to run and compile this software.</h2>
 
-Prerequisites
+<b>Prerequisites</b>
 
 Windows OS (Recommended), .NET Framework Installed, Visual Studio (2022 or later)
 
-Steps to Run
+<b>Steps to Run</b>
 
 Clone the repository from GitHub:, git clone https://github.com/your-repo-name.git, Open the solution (.sln) file in Visual Studio, Build the project (Ctrl + Shift + B), Run the application (F5) or will click on the Green Start play Button located on the top of the Visual studio app.
 
@@ -30,6 +30,10 @@ Edition
 Description
 Fanatics Number (Loyalty Program) (if not, they may sign up)
 Phone Number
+Book format
+Whether they want the staff to search for a copy on our online website
+Whether the store has stock;
+and if not, whether they want staff to check with other branches and possibly order it.
 
 It allows users to store and retrieve book details seamlessly through a JSON-based storage system, ensuring fast and efficient lookups.The landing page called form1 which is displayed beautifully using relative pictures, different fonts and a simple background making it easy to read, follow and an interactive and colourful window form for them.
 
@@ -65,6 +69,7 @@ My motivation for this project was to create a GUI/ user friendly, easy to use a
 🔄 <b>Data Syncing</b>: Sync with an online book database for live availability.
 
 📱 <b>Mobile Compatibility:</b> Convert into a mobile app for better accessibility.
+</br>
 
 📢 <b>Developed by:</b> Trusha Lalla📅 <b>Project Completion Date:</b> Jan 2025
 
