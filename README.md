@@ -14,9 +14,9 @@ Windows OS (Recommended), .NET Framework Installed, Visual Studio (2022 or later
 
 <b>Steps to Run</b>
 
-Clone the repository from GitHub:, git clone https://github.com/your-repo-name.git, Open the solution (.sln) file in Visual Studio, Build the project (Ctrl + Shift + B), Run the application (F5) or will click on the Green Start play Button located on the top of the Visual studio app.
+Clone the repository from GitHub:, git clone https://github.com/TrushaLalla/Overcoming-Communication-Difficulties-at-Exclusive-Books, Open the solution (.sln) file in Visual Studio, Build the project (Ctrl + Shift + B), Run the application (F5) or will click on the Green Start play Button located on the top of the Visual studio app.
 
-To get access to my project, the user will need to create an account on GitHub and will need to lone the project: git clone [https://github.com/your-repo-name.git](https://github.com/TrushaLalla/Overcoming-Communication-Difficulties-at-Exclusive-Books)
+To get access to my project, the user will need to create an account on GitHub and will need to lone the project: git clone(https://github.com/TrushaLalla/Overcoming-Communication-Difficulties-at-Exclusive-Books)
 
 I have created this project all by myself with the help of no class members, putting in enough time and hard work to get a lovely windows form for the customers who face communication difficulties at Exclsuive Books.
 
