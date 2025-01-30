@@ -60,8 +60,9 @@ My motivation for this project was to create a GUI/ user friendly, easy to use a
 📌 <b>Checkbox Retention Fix:</b> All checkboxes remain ticked according to saved values.
 
 🎨 <b>User-Friendly UI:</b> Windows Forms interface designed for ease of use.</br>
+</br>
 
-📢 <b>Developed by:</b> Trusha Lalla📅 <b>Project Completion Date:</b> Jan 2025
+📢 <h2><b>Developed by:</b> Trusha Lalla📅 <b>Project Completion Date:</b> Jan 2025</h2>
 
 <h2>LINKS:</h2>
 
