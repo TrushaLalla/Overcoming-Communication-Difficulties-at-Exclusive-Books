@@ -39,7 +39,7 @@ It allows users to store and retrieve book details seamlessly through a JSON-bas
 <h2>Goals for this project</h2>
 
 My motivation for this project was to create a GUI/ user friendly, easy to use and to follow application.</br>
-✅ Provide an accessible book search system for all users.
+✅ Provide an accessible book search system for targeted users.
 
 ✅ Enable book data storage & retrieval using JSON.
 
