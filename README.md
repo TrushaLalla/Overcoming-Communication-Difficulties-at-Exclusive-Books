@@ -21,18 +21,18 @@ I have created this project all by myself with the help of no class members, put
 
 <h2>What this software intends to do</h2>
 
-This application is designed to help Exclusive Books customers (especially those individuals who cant talk and potentially use sign language and those who cant hear) search for books by providing details such as:
+This application is designed to help Exclusive Books customers (especially those individuals who cant talk and potentially use sign language and those who cant hear) search for books by providing details such as:</br>
 
-Book Title
-Author Name & Surname
-Edition
-Description
-Fanatics Number (Loyalty Program) (if not, they may sign up)
-Phone Number
-Book format
-Whether they want the staff to search for a copy on our online website
-Whether the store has stock;
-and if not, whether they want staff to check with other branches and possibly order it.
+Book Title</br>
+Author Name & Surname</br>
+Edition</br>
+Description</br>
+Fanatics Number (Loyalty Program) (if not, they may sign up)</br>
+Phone Number</br>
+Book format</br>
+Whether they want the staff to search for a copy on our online website</br>
+Whether the store has stock;</br>
+and if not, whether they want staff to check with other branches and possibly order it.</br>
 
 It allows users to store and retrieve book details seamlessly through a JSON-based storage system, ensuring fast and efficient lookups.The landing page called form1 which is displayed beautifully using relative pictures, different fonts and a simple background making it easy to read, follow and an interactive and colourful window form for them.
 
