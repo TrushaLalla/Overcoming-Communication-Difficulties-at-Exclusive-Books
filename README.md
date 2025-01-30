@@ -59,16 +59,7 @@ My motivation for this project was to create a GUI/ user friendly, easy to use a
 
 📌 <b>Checkbox Retention Fix:</b> All checkboxes remain ticked according to saved values.
 
-🎨 <b>User-Friendly UI:</b> Windows Forms interface designed for ease of use.
-
-💡 Future Improvements
-
-📊 <b>Analytics Dashboard:</b> Track popular searches and book requests.
-
-🔄 <b>Data Syncing</b>: Sync with an online book database for live availability.
-
-📱 <b>Mobile Compatibility:</b> Convert into a mobile app for better accessibility.
-</br>
+🎨 <b>User-Friendly UI:</b> Windows Forms interface designed for ease of use.</br>
 
 📢 <b>Developed by:</b> Trusha Lalla📅 <b>Project Completion Date:</b> Jan 2025
 
