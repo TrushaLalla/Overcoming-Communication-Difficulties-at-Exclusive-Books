@@ -21,7 +21,7 @@ I have created this project all by myself with the help of no class members, put
 
 <h2>What this software intends to do</h2>
 
-This application is designed to help Exclusive Books customers (especially those individuals who cant talk and potentially use sign language and those who cant hear) search for books by providing details such as:</br>
+This application is designed to help Exclusive Books customers (especially those individuals who cannot speak and/or use sign language and those who cannot hear) search for books by providing details such as:</br>
 
 Book Title</br>
 Author Name & Surname</br>
