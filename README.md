@@ -49,7 +49,7 @@ My motivation for this project was to create a GUI/ user friendly, easy to use a
 
 ✅ Optimize search functionality to allow lookups by multiple fields (title, author, fanatics number, etc.).
 
-🔧 <h2>Features</h2>
+<h2>🔧 Features</h2>
 
 📖 <b>Store Book Details:</b> Customers can enter book information and save it.
 
