@@ -8,7 +8,7 @@
     public string PhoneNumber { get; set; }
     public bool IsInStock { get; set; } // Checkbox: "Do we have this book in stock?"
     public bool OrderIfNotAvailable { get; set; } // Checkbox: "Would you like us to order it for you?"
-    public bool CheckOnline { get; set; } // Checkbox: "May we check if there is a copy online?"
+    public bool CheckOnline { get; set; } // Checkbox: "onlinecopy ?"
     public bool IsMember { get; set; } // Checkbox: "Are you an Exclusive Books member?"
     public string PreferredFormat { get; set; } // Hardcover, Paperback, eBook
     public string FanaticsNumber { get; set; }

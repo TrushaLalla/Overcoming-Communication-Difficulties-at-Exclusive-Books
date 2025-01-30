@@ -68,7 +68,6 @@
             this.txtenterno = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.listBoxBooks = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,7 +120,7 @@
             this.label4.Size = new System.Drawing.Size(124, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Author Surname:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+           // this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -198,7 +197,7 @@
             this.label7.Size = new System.Drawing.Size(772, 27);
             this.label7.TabIndex = 12;
             this.label7.Text = "Once saved, please call a staff member to assist you further. Thank You.";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            //this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -220,7 +219,7 @@
             this.txtphonenumber.Name = "txtphonenumber";
             this.txtphonenumber.Size = new System.Drawing.Size(273, 28);
             this.txtphonenumber.TabIndex = 12;
-            this.txtphonenumber.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+          //  this.txtphonenumber.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label9
             // 
@@ -253,7 +252,7 @@
             this.chkstock.TabIndex = 9;
             this.chkstock.Text = "Yes, I\'d like to check if this book is available in-store.";
             this.chkstock.UseVisualStyleBackColor = true;
-            this.chkstock.CheckedChanged += new System.EventHandler(this.chkstock_CheckedChanged);
+           // this.chkstock.CheckedChanged += new System.EventHandler(this.chkstock_CheckedChanged);
             // 
             // label11
             // 
@@ -423,7 +422,7 @@
             // 
             this.chkyes3.AutoSize = true;
             this.chkyes3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkyes3.Location = new System.Drawing.Point(723, 309);
+            this.chkyes3.Location = new System.Drawing.Point(759, 309);
             this.chkyes3.Name = "chkyes3";
             this.chkyes3.Size = new System.Drawing.Size(49, 19);
             this.chkyes3.TabIndex = 14;
@@ -434,7 +433,7 @@
             // 
             this.chkno3.AutoSize = true;
             this.chkno3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkno3.Location = new System.Drawing.Point(778, 309);
+            this.chkno3.Location = new System.Drawing.Point(814, 309);
             this.chkno3.Name = "chkno3";
             this.chkno3.Size = new System.Drawing.Size(44, 19);
             this.chkno3.TabIndex = 15;
@@ -483,20 +482,11 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // listBoxBooks
-            // 
-            this.listBoxBooks.FormattingEnabled = true;
-            this.listBoxBooks.Location = new System.Drawing.Point(390, 139);
-            this.listBoxBooks.Name = "listBoxBooks";
-            this.listBoxBooks.Size = new System.Drawing.Size(233, 186);
-            this.listBoxBooks.TabIndex = 34;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1207, 749);
-            this.Controls.Add(this.listBoxBooks);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtenterno);
@@ -586,6 +576,5 @@
         private System.Windows.Forms.TextBox txtenterno;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBoxBooks;
     }
 }

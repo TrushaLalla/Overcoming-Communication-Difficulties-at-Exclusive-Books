@@ -23,7 +23,7 @@ namespace eb
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(allbookinfos);
             this.Hide();
             form2.Show();
             

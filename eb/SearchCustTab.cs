@@ -21,6 +21,7 @@ namespace eb
         {
             InitializeComponent();
             this.allbookinfos = booklist;
+            //PopulateTextBoxes();
         }
 
 
@@ -34,41 +35,29 @@ namespace eb
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
-           // string searchTerm = txtSearch.Text.Trim();
             string searchfanaticsNumber = txtsearchnumber.Text;
             string searchTitle = txtsearchtitle.Text;
             string searchSurname = txtsearchsurname.Text;
 
-            // LINQ query with null checks for .Contains
-            var results = allbookinfos.Where(book =>
-    (string.IsNullOrEmpty(searchfanaticsNumber) || book.FanaticsNumber == searchfanaticsNumber) &&
-    (string.IsNullOrEmpty(searchTitle) || (book.Title != null && book.Title.ToLower().Contains(searchTitle.ToLower()))) &&
-    (string.IsNullOrEmpty(searchSurname) || (book.Surname != null && book.Surname.ToLower().Contains(searchSurname.ToLower())))
-).ToList();
-
-
-
-
+            // LINQ search query
             BookDetails foundBook = allbookinfos.FirstOrDefault(book =>
-            book.FanaticsNumber == searchfanaticsNumber ||
-            book.Title.Equals(searchTitle, StringComparison.OrdinalIgnoreCase) ||
-            book.Surname.Equals(searchSurname, StringComparison.OrdinalIgnoreCase));
+                (!string.IsNullOrEmpty(searchfanaticsNumber) && book.FanaticsNumber == searchfanaticsNumber) ||
+                (!string.IsNullOrEmpty(searchTitle) && book.Title != null && book.Title.Equals(searchTitle, StringComparison.OrdinalIgnoreCase)) ||
+                (!string.IsNullOrEmpty(searchSurname) && book.Surname != null && book.Surname.Equals(searchSurname, StringComparison.OrdinalIgnoreCase)));
 
             if (foundBook != null)
             {
-                Form2 form2 = new Form2(foundBook); // constructor to accept a BookDetails object
-                PopulateForm( foundBook);
+                // ✅ Correctly pass the found book to Form2
+                Form2 form2 = new Form2(allbookinfos, foundBook);
+                this.Hide();
                 form2.Show();
-                this.Hide(); 
             }
             else
             {
-                MessageBox.Show("Book not found.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Book not found.", "Book Search", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //--------------------------------------------------------------------------------------------------------------
-
-
         }
+
 
         private void btnnewbook_Click(object sender, EventArgs e)
         {
