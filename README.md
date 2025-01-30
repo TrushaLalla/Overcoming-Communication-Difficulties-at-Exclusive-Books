@@ -34,7 +34,7 @@ Whether they want the staff to search for a copy on our online website</br>
 Whether the store has stock;</br>
 and if not, whether they want staff to check with other branches and possibly order it.</br>
 
-It allows users to store and retrieve book details seamlessly through a JSON-based storage system, ensuring fast and efficient lookups.The landing page called form1 which is displayed beautifully using relative pictures, different fonts and a simple background making it easy to read, follow and an interactive and colourful window form for them.
+It allows users to store and retrieve book details seamlessly through a JSON-based storage system, ensuring fast and efficient lookups.The landing page called form1 which is displayed beautifully using relative pictures attracting the targetted audience only, different fonts and a simple background making it easy to read, follow and an interactive and colourful window form for them.
 
 <h2>Goals for this project</h2>
 
